@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="=X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dani Maulana | Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/aafc54f2bf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="css/images/Logo-01.png" class="logo">
+                <ul id="sidemenu">
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi,.. <br><span>I'm Dani Maulana</span>
+                    <h2>Fresh Graduate </h2>
+                </h1>
+                <p>Bacheelor of Electrical Engineering </p>
+            </div>
+        </div>
+    </div>
+    <!--About------------->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="css/images/About.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p>Engineering graduate major in electrical engineering with background electronic, control system,
+                        and robotic.
+                        Passionate in programing embbeded system development boards (Raspberry pi, Arduino, and
+                        ESP32/8266) for IoT
+                        implementation. Highly analytical, motivated and solving problem. Can work well both
+                        independently and in a team.</p>
+
+                    <div class="tab-tittle">
+                        <p class="tab-links active-link" onclick="opentab('skils')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('award')">Award and Honour</p>
+                        <p class="tab-links" onclick="opentab('publication')">Publication</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul type="circle">
+                            <li><span>Embedded System Board Development</span><br>Programing, designing, and
+                                implementation projects using embedded system development board</li>
+                            <li><span>PCB</span><br>Designing printed circuit board</li>
+                            <li><span>CAD</span><br>Designing mechine, prototype, and building</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Support Technician at Pilot Project Smart Grid in Microgrid</span><br>November
+                                2021 - December 2021</li>
+                            <li><span>Assistant Laboratory at Udayana University</span><br>January 2019- July 2019</li>
+                            <li><span>IT Support Technician at Telkom Indonesia located in Nusa
+                                    Dua,Bali</span><br>August 2018 - October 2018</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bacheelor Deegre of Electrical Engineering from Udayana
+                                    University</span><br>2017-2022</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="award">
+                        <ul>
+                            <li><span>Awardee of Student Creativity Program (PKM) Funded 2020</span><br>Creative
+                                initiative PKM tittle:"KWH Smart Box Perangkat KWH Meter Unik dan Cerdas"</li>
+                            <li><span>Speaker of Proteus Training [Delivered in Bahasa]</span><br>Explanation using
+                                Proteus software</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="publication">
+                        <ul>
+                            <li><span>Swiftlet Nest Farm Monitoring System with ESP32-CAM and Telegram</span>
+                                <br><i class="fa-solid fa-square-arrow-up-right"></i><a href="#" target="_blank"> See
+                                    publication</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------portofolio-------------------------->
+    <section id="projects">
+        <div class="container">
+            <h1 class="sub-tittle">My Projects</h1>
+            <div class="projects-list">
+                <div class="project">
+                    <img src="css/images/project1.jpg">
+                    <div class="layer">
+                        <h3>ESP32 PCB Design</h3>
+                        <p>The printed circuit board design<br>for Internet of Things future project when using ESP32
+                            board. Check the link below</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="css/images/project2.png">
+                    <div class="layer">
+                        <h3>Wind Turbine Blade Design</h3>
+                        <p>Tapper blade the sky dancer wind turbine<br> with NACCA 4412 Aerofoil and simulated
+                            coeficient power, TSR, and wind velocity. Check the link below</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="css/images/project3.jpg">
+                    <div class="layer">
+                        <h3>Swiftlet Nest Farm with IoT</h3>
+                        <p>Monitoring and controling swiftlet nest farm bussiness by mobile. Using IoT able to monitor
+                            nest condition, temperature, and humadity then automation system to control water pump and
+                            exhaust fan. Check the link below</p>
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="css/images/project4.png">
+                    <div class="layer">
+                        <h3>Smart Home with IoT Implementation</h3>
+                        <p>Connecting home devices with internet for monitoring. Adding alarm for flame, methane gass,
+                            and flood as fiturs. Check the link below</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </section>
+    <!-------------------contact-------------------------->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact">
+                    <h1 class="sub-tittle">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>danimaulana1907@gmail.com</p>
+                    <div class="social-icons">
+                        <p>Find me on:</p>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="comment">
+                    <h1>Give your comment below</h1>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="btn submit">Submit</button>
+                        <p id="comment"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/opentab.js"></script> 
+    <script src="js/menusmall.js"></script>
+    <script src="js/comment.js"></script>
+
+</body>
+
+</html>
